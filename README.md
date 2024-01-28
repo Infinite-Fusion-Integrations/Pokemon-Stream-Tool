@@ -1,41 +1,51 @@
 <p align="center">
-
   <img src="https://github.com/Readek/Pokemon-Stream-Tool/blob/main/Github%20Resources/Preview%20GUI.png" alt="GUI Preview">
-  
 </p>
 
+**This repo is under active WIP! Things are usable, although not consumer friendly.**
 <h1 align="center">Pokemon Stream Tool</h1>
 
-This repo is under active WIP! Things are usable, although not consumer friendly. But for now, feature list:
 
-- Electron, **crossplatform** GUI (Windows, Linux).
-- Fully **open-source**! Download it [right here, right now](https://github.com/Readek/Pokemon-Stream-Tool/archive/refs/heads/master.zip) and modify the tool to your heart's content.
-- Manage your active pokemon party (species, nickname, lvl...)
-- Manage your player's stats (badges, useless stats...)
-- Store your catches to be displayed on a "Waiting to start" scene.
-- Display stats for current wild encounter.
-- **Gen 6 auto-update** for your current player party, reading directly from Citra.
-- All info can be changed manually, with future plans to automate more things.
-- **Remote GUI** so multiple people on different devices can manage the overlay info at the same time.
-- All scripts can be found outside of executable, so modifying stuff to your liking is ez.
+**Pokemon Stream Tool** is a **fully open-source**, **crossplatform** Electron app for Windows and Linux. Streamers on any platform can use this tool to create dynamic overlays, which show game information to viewers in convenient and interesting ways!
 
-For the moment, the tool has overlays for:
+You can download it [right here, right now](https://github.com/Readek/Pokemon-Stream-Tool/archive/refs/heads/master.zip) and modify the tool to your heart's content. All scripts can be found outside of executable, so modifying stuff to your liking is ez.
+
+The app can **automatically grab data** with current support for Gen 6 games running on [Citra](https://citra-emu.org/). Currently supports updating player party, with future plans to automate more things.
+
+The **Back-end GUI** supports modifying all information manually. the GUI can also be **accessed remotely** so multiple people on different devices can manage the overlay info at the same time.
+
+Some of the elements that can be used in overlays include:
+- Your active Pokemon party (species, nickname, lvl, health...)
+- Your trainer stats (badges, caught Pokemon list, useless stats...)
+- Stats for the current wild encounter
+
+## Getting started
+
+To get started, you can [download this repository](https://github.com/Readek/Pokemon-Stream-Tool/archive/refs/heads/master.zip).  You will also need to [download the sprites](#getting-the-pokémon-sprites) as they are not included.
+
+To start the GUI, open the Stream Tool folder and run *Poke Stream Tool.exe* on Windows or *Poke Stream Tool.AppImage* on Linux.
+
+To use the overlays, create a new Browser source in OBS and check "local file". Navigate to the folder you want inside **Stream Tool\Overlays** and select the corresponding .html file.
+
+Instructions for remote GUI are not yet available.
+
+## Overlays
+For the moment, the tool has the following overlays:
+
+- "Waiting to start" (cycles through Pokemon you've caught):
+
+  <img width="720 px" src="https://github.com/Infinite-Fusion-Integrations/Pokemon-Stream-Tool/blob/main/Github%20Resources/Preview%20Overlay%20Intro.png" alt="Intro Overlay Preview">
+  
 
 - Black and White 2:
 
-<p align="center">
-
-  <img src="https://github.com/Readek/Pokemon-Stream-Tool/blob/main/Github%20Resources/Preview%20Overlay%20BnW2.jpg" alt="BW2 Overlay Preview">
+  <img width="720 px" src="https://github.com/Readek/Pokemon-Stream-Tool/blob/main/Github%20Resources/Preview%20Overlay%20BnW2.jpg" alt="BW2 Overlay Preview">
   
-</p>
 
 - X and Y:
 
-<p align="center">
-
-  <img src="https://github.com/Readek/Pokemon-Stream-Tool/blob/main/Github%20Resources/Preview%20Overlay%20XY.jpg" alt="XY Overlay Preview">
-  
-</p>
+  <img width="720 px" src="https://github.com/Readek/Pokemon-Stream-Tool/blob/main/Github%20Resources/Preview%20Overlay%20XY.jpg" alt="XY Overlay Preview">
+ 
 
 ## Getting the Pokémon sprites
 
